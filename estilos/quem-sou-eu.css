@@ -1,0 +1,14 @@
+.quem-sou-eu{
+    color: white;
+    background-color: #555555;
+    padding-bottom: 1rem;
+}
+
+.quem-sou-eu__titulo{
+    font-family: cursive;
+
+}
+
+.quem-sou-eu__texto{
+    font-family: sans-serif;
+}

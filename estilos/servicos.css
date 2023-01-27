@@ -1,0 +1,98 @@
+body{
+    background-color: #333333;
+}
+.servicos{
+    background-color: #555555;
+    color: white;
+}
+.servicos__cr, .servicos__renovacao, .servicos__tranferencia, .servicos__concessao, .servicos__caca-e-colecao{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 4rem 50vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.servicos__cr-titulo, .servicos__renovacao-titulo, .servicos__tranferencia-titulo, .servicos__concessao-titulo, .servicos__caca-e-colecao-titulo{
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.servicos__cr-texto, .servicos__renovacao-texto, .servicos__tranferencia-texto, .servicos__concessao-texto, .servicos__caca-e-colecao-texto{
+    text-align: justify;
+    grid-row: 2;
+    grid-column: span 2;
+    align-self: top;
+    padding: 0 3rem 0 15rem;
+}
+
+.servicos__cr-img{
+    background-image: url(/fotos/cr.jpeg);
+    grid-row: span 2;
+    grid-column: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+}
+
+.servicos__renovacao-img{
+    background-image: url(/fotos/renovacao.jpeg);
+    grid-row: span 2;
+    grid-column: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+}
+
+.servicos__tranferencia-img{
+    background-image: url(/fotos/transferencia.jpeg);
+    grid-row: span 2;
+    grid-column: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+
+}
+
+.servicos__concessao-img{
+    background-image: url(/fotos/Transferencia.jpeg);
+    grid-row: span 2;
+    grid-column: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+}
+
+.servicos__caca-e-colecao-img{
+    background-image: url(/fotos/Transferencia.jpeg);
+    grid-row: span 2;
+    grid-column: 3;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center ;
+}
+
+.botao-modal{
+    text-transform: uppercase;
+    display: block;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 500px){
+    .servicos__cr-img, .servicos__renovacao-img, .servicos__tranferencia-img, .servicos__concessao-img, .servicos__caca-e-colecao-img {
+        display: none;
+    }
+
+    .servicos__cr, .servicos__renovacao, .servicos__tranferencia, .servicos__concessao, .servicos__caca-e-colecao{
+       display: flex;
+       flex-direction: column;
+
+    }
+
+    .servicos__cr-texto, .servicos__renovacao-texto, .servicos__tranferencia-texto, .servicos__concessao-texto, .servicos__caca-e-colecao-texto{
+        text-align: justify;
+        padding: 0;
+}
+}
+

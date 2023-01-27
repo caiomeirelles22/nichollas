@@ -1,0 +1,14 @@
+.galeria-fotos{
+    margin-top: 1rem;
+}
+
+.galeria-fotos__titulo{
+    font-family: sans-serif;
+
+}
+
+@media (min-width: 600px){
+    .galeria-fotos{
+        display: none;
+    }
+}

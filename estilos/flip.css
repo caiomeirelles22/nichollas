@@ -1,0 +1,84 @@
+.card {
+    perspective: 1000px;
+    height: 400px;
+    background-color: #333;
+  }
+  
+  .card-front{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+
+    transform: rotateY(0deg);
+  }
+
+  .card-foto1{
+    background-image: url(/fotos/cr.jpeg);
+    background-size: cover;
+    background-position-y: -.7rem;
+  }
+
+  .card-foto2{
+    background-image: url(/fotos/renovararma.jpeg);
+    background-size:contain;
+    background-position: center;
+    
+  }
+
+  .card-foto3{
+    background-image: url(/fotos/transferencia2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -1rem;
+  }
+
+  .card-foto4{
+    background-image: url(/fotos/caixaArma.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -1rem;
+
+  }
+
+
+
+  .card-back {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+
+    transform: rotateY(180deg);
+
+  }
+  
+  
+  
+  
+  .card.flipped .card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  
+
+
+  .sombra{
+    box-shadow: 10px 9px 22px -1px rgba(245,231,245,1);
+  }
+
+
+
+
+

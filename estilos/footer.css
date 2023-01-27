@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 2rem;
+    background-color: #777777;
+    padding-top: 1rem;
+}
+
+.footer__ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+ .footer__copy{
+    color: white;
+ }

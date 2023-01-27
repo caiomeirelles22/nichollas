@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./estilos/reset-css.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos/intro.css">
+  <link rel="stylesheet" href="estilos/cartoes.css">
+  <link rel="stylesheet" href="estilos/servicos.css">
+  <link rel="stylesheet" href="/estilos/contatos.css">
+  <link rel="stylesheet" href="/estilos/footer.css">
+  <link rel="stylesheet" href="/estilos/quem-sou-eu.css">
+  <script src="/jquery-3.6.1.js"></script>
+  <link rel="stylesheet" href="/estilos/flip.css">
+  <link rel="stylesheet" href="/estilos/galeria.css">
+  <link rel="stylesheet" href="/estilos/servicos-modal.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Nichollas</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quem-sou-eu">Quem sou eu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contatos">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="intro container">
+      <div class="intro__logo img-fluid shadow-lg p-3 mb-5 bg-body rounded sombra"></div>
+      <h1 class="intro__titulo">Despachante de armas</h1>
+      <div class="intro__arma"></div>
+      <p class="intro__texto">Assessoria e realização dos trâmites legais para concessão da posse e porte de arma de
+        fogo, transferências, apostilamentos, renovação de registro, emissão de CR de Atirador, Caçador e Colecionador.
+      </p>
+    </section>
+
+    <section id="quem-sou-eu" class="quem-sou-eu container">
+      <h1 class="quem-sou-eu__titulo text-center">Nichollas Reis</h1>
+      <p class="quem-sou-eu__texto container text-center">Sou Despachante de armas com CR ativo desde 2015, servi o
+        exército brasileiro entre 2005 e 2012, durante esse período participei da missão de paz no Haiti. Porém meu
+        coração me dizia para trocar de área sem largar minha paixão por armas, foi então que decidi me tornar
+        despachante de armas e ajudar pessoas como você a vencer a burocracia e conseguir fazer todos os processos
+        legais para ter sua arma legalizada. </p>
+    </section>
+
+    <section id="cards" class="cartoes-desktop container text-center">
+      <div class="row">
+
+        <article class="card cartoes-desktop__cartao" style="width: 18rem;">
+          <div id="card1" class="card">
+            <div class="card-front text-center card-foto1"></div>
+            <div class="card-back text-center">
+              <p class="text-center container">O CR é o documento que comprova que você está autorizado a desempenhar a
+                atividade de Atirador Desportivo, Caçador ou Colecionador</p>
+            </div>
+          </div>
+          <a href="#servicos__cr" class="btn btn-primary text-centery ">Emissão de CR</a>
+        </article>
+
+        <article class="card cartoes-desktop__cartao" style="width: 18rem;">
+          <div id="card2" class="card">
+            <div class="card-front text-center card-foto2"></div>
+            <div class="card-back text-center">
+              <p class="text-center container">Ter posse de arma com REGISTRO VENCIDO não é considerado crime,
+                entretanto é considerado uma infração administrativa podendo gerar multas e muita dor de cabeça.</p>
+            </div>
+          </div>
+          <a href="#servicos__renovacao" class="btn btn-primary text-centery ">Renovação de registro</a>
+        </article>
+
+        <article class="card cartoes-desktop__cartao" style="width: 18rem;">
+          <div id="card3" class="card">
+            <div class="card-front text-center card-foto3"></div>
+            <div class="card-back text-center">
+              <p class="text-center container">A transferência antecipada da arma sem autorização pode caracterizar o
+                crime do porte ilegal de arma. Entre em contato conosco para não correr o risco de cometer algum crime,
+                mesmo que sem querer.</p>
+            </div>
+          </div>
+          <a href="#servicos__tranferencia" class="btn btn-primary text-center">transferência de posse</a>
+        </article>
+      </div>
+
+      <div class="row">
+        <article class="card cartoes-desktop__cartao" style="width: 18rem;">
+          <div id="card4" class="card">
+            <div class="card-front text-center card-foto4"></div>
+            <div class="card-back text-center">
+              <p class="text-center container">a Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+                iste sint eius deleniti totam autem harum animi nisi! Veniam molestiae laboriosam dicta nihil nemo iure
+                fugiat illum magnam natus ullam?.</p>
+            </div>
+          </div>
+          <a href="#servicos__tranferencia" class="btn btn-primary text-center">Concessão de posse</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cartoes-mobile text-center">
+    </section>
+
+    <section class="servicos container">
+      <articles id="servicos__cr" class="servicos__cr container">
+        <h1 class="servicos__cr-titulo">Emissão de CR</h1>
+        <p class="servicos__cr-texto ">O que é o CR? O Certificado de Registro ou CR é um documento emitido pelo
+          exército, através de um cadastro realizado junto ao Exército Brasileiro. A emissão desse Certificado de
+          Registro dá direito ao cidadão de exercer atividades como caça, coleção de armas ou tiro esportivo. <br>
+          Quais documentos preciso? <br>
+          <!-- Button trigger modal -->
+          <a class="btn btn-primary botao-modal botao-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Clique para ver os documentos necessários </a>
+        </p>
+        <div class="servicos__cr-img"></div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Documentos necessários</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-dialog modal-dialog-scrollable">
+                <ul class="text-primary lista-cr">
+                  <li class="item-cr">Original e cópia de documento de identificação pessoal.</li>
+                  <li class="item-cr">Certidões de antecedentes criminais das Justiças Federal, Estadual, Militar e
+                    Eleitoral.</li>
+                  <li class="item-cr">Declaração de não estar respondendo a inquérito policial ou a processo criminal.
+                  </li>
+                  <li class="item-cr">Comprovante de ocupação lícita.</li>
+                  <li class="item-cr">Comprovante de residência fixa.</li>
+                  <li class="item-cr">Declaração de endereço de guarda do acervo.</li>
+                  <li class="item-cr">Declaração de segurança do acervo.</li>
+                  <li class="item-cr">Comprovante de capacidade técnica para o manuseio da arma de fogo.</li>
+                  <li class="item-cr">Laudo de aptidão psicológica para o manuseio de arma de fogo, fornecido por
+                    psicólogo credenciado pela Polícia Federal.</li>
+                  <li class="item-cr">Comprovante de filiação a entidade de tiro/caça (anexo C da Portaria 150 – COLOG,
+                    de 5 de dezembro de 2019)..</li>
+                  <li class="item-cr">Cópia da Procuração Pública (caso o requerente nomeie procurador).</li>
+                  <li class="item-cr">Cópia da Identidade do Procurador (caso o requerente nomeie procurador).</li>
+                  <li class="item-cr">Comprovante de pagamento da taxa correspondente.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </articles>
+
+      <articles id="servicos__renovacao" class="servicos__renovacao container">
+        <h1 class="servicos__renovacao-titulo">renovação de registro</h1>
+        <p class="servicos__renovacao-texto">O que é o CR? O Certificado de Registro ou CR é um documento emitido pelo
+          exército, através de um cadastro realizado junto ao Exército Brasileiro. A emissão desse Certificado de
+          Registro dá direito ao cidadão de exercer atividades como caça, coleção de armas ou tiro esportivo. <br>
+          Quais documentos preciso? <br>
+          <!-- Button trigger modal -->
+          <a class="btn btn-primary botao-modal" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            Clique para ver os documentos necessários </a>
+        </p>
+        <div class="servicos__renovacao-img"></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="exampleModalLabel">Documentos necessários</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-dialog modal-dialog-scrollable">
+                <ul class="text-primary lista-cr">
+                  <li class="item-cr">requerimento assinado;</li>
+                  <li class="item-cr">1 (uma) foto 3x4 recente; </li>
+                  <li class="item-cr">original e cópia do RG e CPF; </li>
+                  <li class="item-cr">comprovante de residência (água, luz, telefone) com data de emissão de até 30
+                    (trinta) dias;</li>
+                  <li class="item-cr">apresentação de documento comprobatório de ocupação lícita, com data de emissão de
+                    até 30 (trinta) dias;</li>
+                  <li class="item-cr">comprovação de idoneidade, com a apresentação de certidões negativas de
+                    antecedentes criminais fornecidas pela Justiça Federal, Estadual (incluindo Juizados Especiais
+                    Criminais), Militar e Eleitoral, que poderão ser fornecidas por meios eletrônicos;</li>
+                  <li class="item-cr">comprovante bancário de pagamento da taxa devida para a emissão do documento;</li>
+                  <li class="item-cr">comprovação de aptidão psicológica para o manuseio de arma de fogo, realizado em
+                    prazo não superior a 01 ano, que deverá ser atestado por psicólogo credenciado pela Polícia Federal;
+                    e</li>
+                  <li class="item-cr">Laudo de aptidão psicológica para o manuseio de arma de fogo, fornecido por
+                    psicólogo credenciado pela Polícia Federal.</li>
+                  <li class="item-cr">comprovação de capacidade técnica para o manuseio de arma de fogo, realizado em
+                    prazo não superior a 01 ano, que deverá ser atestado por instrutor de armamento e tiro credenciado
+                    pela Polícia Federal.</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </articles>
+
+      <articles id="servicos__tranferencia" class="servicos__tranferencia container">
+        <h1 class="servicos__tranferencia-titulo">transferências de armas</h1>
+        <p class="servicos__tranferencia-texto"> IMPORTANTE: A transferência/doação, com a consequente entrega da arma
+          de fogo ao adquirente, somente deve ser realizada após a autorização de transferência concedida pela Polícia
+          Federal, tendo em vista a possibilidade de indeferimento do pedido em razão do não atendimento aos requisitos
+          legais ou regulamentares. <br>
+          Quais documentos preciso? <br>
+          <!-- Button trigger modal -->
+          <a class="btn btn-primary botao-modal" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            Clique para ver os documentos necessários </a>
+        </p>
+        <div class="servicos__tranferencia-img"></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="exampleModalLabe">Documentos necessários</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-dialog modal-dialog-scrollable">
+                <ul class="text-primary lista-cr">
+                  <li class="item-cr">requerimento assinado;</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento de identidade e CPF. </li>
+                  <li class="item-cr">Certidões negativas de antecedentes criminais fornecidas pela Justiça Federal,
+                    Estadual, Militar e Eleitoral,</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento comprobatório de ocupação
+                    lícita, com data de emissão de até 60 (sessenta) dias.</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento comprobatório de residência
+                    fixa em nome do interessado com data de emissão de até 60 (sessenta) dias ou, caso o comprovante
+                    esteja em nome de terceiro, deverá também ser apresentada declaração de que o interessado reside no
+                    endereço informado, firmada pelo terceiro e acompanhada de cópia de seu documento de identidade.
+                  </li>
+                  <li class="item-cr">Laudo de aptidão psicológica emitido por profissional credenciado pela Polícia
+                    Federal, emitido com prazo não superior a um ano, contado da data da avaliação.</li>
+                  <li class="item-cr">Comprovante que ateste a capacidade técnica para manuseio de arma de fogo de
+                    calibre igual ou superior ao que se pretende adquirir, emitido por profissional credenciado pela
+                    Polícia Federal, com prazo não superior a um ano, contado da data da avaliação.</li>
+                  <li class="item-cr">Comprovante do pagamento da taxa respectiva.</li>
+                  <li class="item-cr">Documento de identificação do atual proprietário.</li>
+                  <li class="item-cr">Documento que comprove a intenção do atual proprietário em transferir a arma de
+                    fogo, no qual deverão constar as respectivas assinaturas..</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </articles>
+
+      <articles id="servicos__concessao" class="servicos__concessao container">
+        <h1 class="servicos__concessao-titulo">Concessão de posse</h1>
+        <p class="servicos__concessao-texto">a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aut
+          reprehenderit sit fuga quia obcaecati reiciendis illo, accusantium, tenetur delectus laudantium distinctio id
+          officia deserunt fugiat omnis animi! Voluptatum, quibusdam. <br>
+          Quais documentos preciso? <br>
+          <!-- Button trigger modal -->
+          <a class="btn btn-primary botao-modal" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            Clique para ver os documentos necessários </a>
+        </p>
+        <div class="servicos__concessao-img"></div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-primary" id="exampleModalLabe">Documentos necessários</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modal-dialog modal-dialog-scrollable">
+                <ul class="text-primary lista-cr">
+                  <li class="item-cr">requerimento Pelé eterno assinado;</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento de identidade e CPF. </li>
+                  <li class="item-cr">Certidões negativas de antecedentes criminais fornecidas pela Justiça Federal,
+                    Estadual, Militar e Eleitoral,</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento comprobatório de ocupação
+                    lícita, com data de emissão de até 60 (sessenta) dias.</li>
+                  <li class="item-cr">Original e cópia ou cópia autenticada de documento comprobatório de residência
+                    fixa em nome do interessado com data de emissão de até 60 (sessenta) dias ou, caso o comprovante
+                    esteja em nome de terceiro, deverá também ser apresentada declaração de que o interessado reside no
+                    endereço informado, firmada pelo terceiro e acompanhada de cópia de seu documento de identidade.
+                  </li>
+                  <li class="item-cr">Laudo de aptidão psicológica emitido por profissional credenciado pela Polícia
+                    Federal, emitido com prazo não superior a um ano, contado da data da avaliação.</li>
+                  <li class="item-cr">Comprovante que ateste a capacidade técnica para manuseio de arma de fogo de
+                    calibre igual ou superior ao que se pretende adquirir, emitido por profissional credenciado pela
+                    Polícia Federal, com prazo não superior a um ano, contado da data da avaliação.</li>
+                  <li class="item-cr">Comprovante do pagamento da taxa respectiva.</li>
+                  <li class="item-cr">Documento de identificação do atual proprietário.</li>
+                  <li class="item-cr">Documento que comprove a intenção do atual proprietário em transferir a arma de
+                    fogo, no qual deverão constar as respectivas assinaturas..</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </articles>
+
+    </section>
+
+    <section id="contatos" class="contatos container">
+      <h1 class="contatos__titulo text-center">Venha nos fazer uma visita</h1>
+      <iframe class="contatos__mapa container"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14821.555294524615!2d-41.3446327!3d-21.7652076!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c0e60e52f67bcc3!2sDespachante%20de%20armas%20Campos%20dos%20Goytacazes-RJ%2C%20cel%2022%2099997-9360!5e0!3m2!1spt-BR!2sbr!4v1671218807244!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <h2 class="contatos__subtitulo">Ou entre em contato conosco, vai ser um prazer atende-lo!</h2>
+      <ul class="contatos__ul">
+        <li class="contatos__ul__wpp"> <a href="https://wa.me/5522998021430" target="_blank"
+            class="contatos__icon-wpp text-dec-none"> <ion-icon name="logo-whatsapp"></ion-icon> Whatsapp</a> </li>
+        <li class="contatos__ul__email"> <a href="mailto:caioa.m.meirelles22@gmail.com" class="text-dec-none"> <ion-icon name="mail-outline"></ion-icon>
+            Email</a></li>
+        <li class="contatos__ul__ligacao"> <a href="tel:22998021430" class="text-dec-none"><ion-icon name="call-outline"></ion-icon>
+            Ligação</a></li>
+        <li class="contatos__ul__insta"> <a href="https://www.instagram.com/nichollasreis_armas/" target="_blank"
+            class="text-dec-none"><ion-icon name="logo-instagram"></ion-icon> Instragram</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="galeria-fotos">
+    <h2 class="galeria-fotos__titulo text-center text-light">Galeria de fotos</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner carro-h">
+        <div class="carousel-item active">
+          <img src="/fotos/backgroud.jpg" class="d-block w-100 carro-h  " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/fotos/arma3.jpg" class="d-block w-100 carro-h" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/fotos/foto1.jpg" class="d-block w-100 carro-h" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <h3 class="text-center">Informações legais</h3>
+    <ul class="footer__ul container">
+      <div class="footer__1">
+        <li class="footer__li footer__nome">Nichollas Reis blabal</li>
+        <li class="footer__li footer__cnpj">CNPJ: 192929292929</li>
+        <li class="footer__li footer__cr">CR: 13131231</li>
+      </div>
+      <div class="footer__2">
+        <li class="footer__li footer__telefone">Telefone: (22)9989898989</li>
+        <li class="footer__li footer__email">Email: nihcolas@email.com</li>
+        <li class="footer__li footer__endereco">Endereço: Avenida 614, loja 23</li>
+      </div>
+    </ul>
+    <p class=" footer__copy text-center">Copyright © 2022 Caio Meirelles - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

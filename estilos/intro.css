@@ -1,0 +1,77 @@
+.intro{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6rem 1.5fr .6fr;
+    background-color: #555555;
+    color: #FFFFFF;
+    padding-top: 4rem;
+    justify-content: center;
+    
+}
+
+.intro__logo{
+    margin: 1rem;
+    grid-column:1;
+    grid-row:span 3;
+    background-image: url(/fotos/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro__titulo{
+    padding-top: 1rem;
+    grid-column:2;
+    grid-row: 1;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.intro__arma{
+    grid-column:2;
+    grid-row: 2;
+    background-image: url(/fotos/backgroud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 4px left 0px;
+    border-radius: 2%;
+}
+
+.intro__texto{
+    grid-column:2;
+    grid-row: 3;
+    text-align: center;
+    padding-top: 2rem;
+    font-family: sans-serif;
+}
+
+@media (max-width: 600px)  {
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .intro__logo{
+        height: 25vh;
+        width: 54vw;
+        margin-left: 25%;
+        background-image: url(/fotos/logo-nichollas.jpg);
+        background-size: contain;
+        border-radius: 10px;
+
+    }
+
+    .intro__titulo{
+        display: none;
+    }
+
+    .intro__arma{
+        background-image: url(/fotos/foto2armas.jpg);
+        height: 25vh;
+        width: 88vw;
+        background-size: contain;
+        border-radius: 10px;
+        align-self: center;
+        background-position: bottom 2px right 0px;
+    }
+}
