@@ -17,27 +17,27 @@
   }
 
   .card-foto1{
-    background-image: url(/fotos/cr.jpeg);
+    background-image: url(../fotos/cr.jpeg);
     background-size: cover;
     background-position-y: -.7rem;
   }
 
   .card-foto2{
-    background-image: url(/fotos/renovararma.jpeg);
+    background-image: url(../fotos/renovararma.jpeg);
     background-size:contain;
     background-position: center;
     
   }
 
   .card-foto3{
-    background-image: url(/fotos/transferencia2.jpg);
+    background-image: url(../fotos/transferencia2.jpg);
     background-size: cover;
     background-position-x: center;
     background-position-y: -1rem;
   }
 
   .card-foto4{
-    background-image: url(/fotos/caixaArma.jpg);
+    background-image: url(../fotos/caixaArma.jpg);
     background-size: cover;
     background-position: center;
     background-position-y: -1rem;
