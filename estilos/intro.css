@@ -14,7 +14,7 @@
     margin: 1rem;
     grid-column:1;
     grid-row:span 3;
-    background-image: url(/fotos/foto1.jpg);
+    background-image: url(../fotos/foto1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
