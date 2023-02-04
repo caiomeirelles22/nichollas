@@ -17,6 +17,7 @@
     background-image: url(../fotos/foto1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 2%;
 }
 
 .intro__titulo{
@@ -49,17 +50,23 @@
     .intro{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        height: 100vh;
     }
-    .intro__logo{
-        height: 25vh;
-        width: 54vw;
-        margin-left: 25%;
+    .intro__logo {
         background-image: url(../fotos/logo-nichollas.jpg);
         background-size: contain;
-        border-radius: 10px;
-
-    }
+        background-position: center;
+        height: 20vh;
+        width: 40%;
+        display: block;
+        align-self: center;
+        box-sizing: border-box;
+/*         border-radius: 50%;
+ */
+        
+      }
+      
 
     .intro__titulo{
         display: none;
@@ -67,11 +74,25 @@
 
     .intro__arma{
         background-image: url(../fotos/foto2armas.jpg);
-        height: 25vh;
-        width: 88vw;
         background-size: contain;
-        border-radius: 10px;
+        background-position: center;
+        height: 40vh;
+        width: 100%;
+        display: flex;
         align-self: center;
-        background-position: bottom 2px right 0px;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      .intro__texto{
+        height: 20vh;
+        grid-column:2;
+        grid-row: 3;
+        text-align: center;
+        padding-top: 2rem;
+        font-family: sans-serif;
     }
+
+
 }
+
