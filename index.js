@@ -1,6 +1,3 @@
-
-alert('trolei')
-
 $('#card1').click(function() {
   $(this).toggleClass('flipped');
 });
