@@ -59,25 +59,13 @@ body{
 }
 
 .servicos__concessao-img{
-    background-image: url(../fotos/Transferencia.jpeg);
+    background-image: url(../fotos/porte.jpeg);
     grid-row: span 2;
     grid-column: 3;
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center ;
     border-radius: 10px;
-
-}
-
-.servicos__caca-e-colecao-img{
-    background-image: url(../fotos/Transferencia.jpeg);
-    grid-row: span 2;
-    grid-column: 3;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: center ;
-    border-radius: 10px;
-
 }
 
 .botao-modal{
